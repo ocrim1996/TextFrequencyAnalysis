@@ -81,3 +81,8 @@ def get_entropy(empirical_distribution):
 	'''some code'''
 ```
 
+## Run
+To run the project:
+```
+python3 TextFrequencyAnalysis.py
+```
