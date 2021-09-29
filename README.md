@@ -48,13 +48,6 @@ def generate_grams(text, m):
 
 Una volta trovato gli m-grammi, è possibile calcolare la **distribuzione empirica dei m-grammi**, definita come segue:
 
-$$ 
-e = (e_{0},. . .,e_{k}) = \left(\frac{f_{0}}{n},. . .,\frac{f_{k}}{m}\right)\\
-\text{dove:}\\
-\bullet \quad \bm{f_{i}} := \text{ indica la frequenza del m-gramma i-esimo.}\\
-\bullet \quad \bm{n} := \text{ indica la lunghezza del vettore di tutti gli m-grammi.} 
-$$
-
 ![equation](https://latex.codecogs.com/gif.latex?e%20%3D%20%28e_%7B0%7D%2C.%20.%20.%2Ce_%7Bk%7D%29%20%3D%20%5Cleft%28%5Cfrac%7Bf_%7B0%7D%7D%7Bn%7D%2C.%20.%20.%2C%5Cfrac%7Bf_%7Bk%7D%7D%7Bm%7D%5Cright%29%5C%5C%20%5Ctext%7Bdove%3A%7D%5C%5C%20%5Cbullet%20%5Cquad%20f_%7Bi%7D%20%3A%3D%20%5Ctext%7B%20indica%20la%20frequenza%20del%20m-gramma%20i-esimo.%7D%5C%5C%20%5Cbullet%20%5Cquad%20n%20%3A%3D%20%5Ctext%7B%20indica%20la%20lunghezza%20del%20vettore%20di%20tutti%20gli%20m-grammi.%7D)
 
 Nel codice la funzione che calcola tale distribuzione empirica dei m-grammi è:
@@ -68,9 +61,7 @@ def get_empirical_distribution(text, m):
 
 Per quanto riguarda l’**indice di coincidenza delle distribuzioni dei m-grammi** è possibile notare che il testo analizzato è sufficientemente lungo tale da definire la formula come segue:
 
-$$
-\text{Dato } \bm{p_{i} = \frac{f_{i}}{n}} \quad \Longrightarrow \quad \text{Indice di Coincidenza } \,\, \bm{I_{c}(x) = \sum_{i=0}^{25}p_{i}^{2}}
-$$
+![equation](https://latex.codecogs.com/gif.latex?%5Ctext%7BDato%20%7D%20p_%7Bi%7D%20%3D%20%5Cfrac%7Bf_%7Bi%7D%7D%7Bn%7D%20%5Cquad%20%5CLongrightarrow%20%5Cquad%20%5Ctext%7BIndice%20di%20Coincidenza%20%7D%20%5C%2C%5C%2C%20I_%7Bc%7D%28x%29%20%3D%20%5Csum_%7Bi%3D0%7D%5E%7B25%7Dp_%7Bi%7D%5E%7B2%7D)
 
 Nel codice la funzione che calcola tale indice di coincidenza delle distribuzioni dei m-grammi è:
 
@@ -81,9 +72,7 @@ def get_coincidence_index(empirical_distribution):
 
 Invece per quanto riguarda l’**entropia delle distribuzioni dei m-grammi** la formula utililizzata è quella dell’**entropia di Shannon**:
 
-$$
-\bm{H(p) = - \sum_{i=0}^{25}p_{i} \cdot \log(p_{i})}
-$$
+![equation](https://latex.codecogs.com/gif.latex?H%28p%29%20%3D%20-%20%5Csum_%7Bi%3D0%7D%5E%7B25%7Dp_%7Bi%7D%20%5Ccdot%20%5Clog%28p_%7Bi%7D%29)
 
 E nel codice la funzione che calcola tale entropia delle distribuzioni dei m-grammi è:
 
