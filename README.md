@@ -48,12 +48,14 @@ def generate_grams(text, m):
 
 Una volta trovato gli m-grammi, è possibile calcolare la **distribuzione empirica dei m-grammi**, definita come segue:
 
-$$ e = (e_{0},. . .,e_{k}) = \left(\frac{f_{0}}{n},. . .,\frac{f_{k}}{m}\right)\\
+$$ 
+e = (e_{0},. . .,e_{k}) = \left(\frac{f_{0}}{n},. . .,\frac{f_{k}}{m}\right)\\
 \text{dove:}\\
 \bullet \quad \bm{f_{i}} := \text{ indica la frequenza del m-gramma i-esimo.}\\
-\bullet \quad \bm{n} := \text{ indica la lunghezza del vettore di tutti gli m-grammi.} $$
+\bullet \quad \bm{n} := \text{ indica la lunghezza del vettore di tutti gli m-grammi.} 
+$$
 
-$ a^2 $
+![equation](https://latex.codecogs.com/gif.latex?e%20%3D%20%28e_%7B0%7D%2C.%20.%20.%2Ce_%7Bk%7D%29%20%3D%20%5Cleft%28%5Cfrac%7Bf_%7B0%7D%7D%7Bn%7D%2C.%20.%20.%2C%5Cfrac%7Bf_%7Bk%7D%7D%7Bm%7D%5Cright%29%5C%5C%20%5Ctext%7Bdove%3A%7D%5C%5C%20%5Cbullet%20%5Cquad%20f_%7Bi%7D%20%3A%3D%20%5Ctext%7B%20indica%20la%20frequenza%20del%20m-gramma%20i-esimo.%7D%5C%5C%20%5Cbullet%20%5Cquad%20n%20%3A%3D%20%5Ctext%7B%20indica%20la%20lunghezza%20del%20vettore%20di%20tutti%20gli%20m-grammi.%7D)
 
 Nel codice la funzione che calcola tale distribuzione empirica dei m-grammi è:
 
