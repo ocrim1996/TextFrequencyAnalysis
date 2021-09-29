@@ -48,12 +48,12 @@ def generate_grams(text, m):
 
 Una volta trovato gli m-grammi, è possibile calcolare la **distribuzione empirica dei m-grammi**, definita come segue:
 
-$$
-\bm{e = (e_{0},. . .,e_{k}) = \left(\frac{f_{0}}{n},. . .,\frac{f_{k}}{m}\right)}\\
+$$ e = (e_{0},. . .,e_{k}) = \left(\frac{f_{0}}{n},. . .,\frac{f_{k}}{m}\right)\\
 \text{dove:}\\
 \bullet \quad \bm{f_{i}} := \text{ indica la frequenza del m-gramma i-esimo.}\\
-\bullet \quad \bm{n} := \text{ indica la lunghezza del vettore di tutti gli m-grammi.}
-$$
+\bullet \quad \bm{n} := \text{ indica la lunghezza del vettore di tutti gli m-grammi.} $$
+
+$ a^2 $
 
 Nel codice la funzione che calcola tale distribuzione empirica dei m-grammi è:
 
